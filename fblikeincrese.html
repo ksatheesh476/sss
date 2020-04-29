@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: blue;
+}
+.fa:active {
+  color: red;
+}
+
+</style>
+<script>
+var likes =0;
+function like() {
+document.getElementById("demo").innerHTML = likes;
+likes=likes+1;
+}
+</script>
+</head>
+<body>
+
+<h2 style="color:blue;">FACEBOOK LIKE BUTTON</h2>
+
+<p type="text" id="demo"></p>
+<button id="button"   onclick="like()"  class="fa fa-thumbs-up"></button>
+
+</body>
+</html> 
